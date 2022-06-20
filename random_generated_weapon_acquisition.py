@@ -12,12 +12,11 @@ class Random_Weapon_Generator():
     def bundle_of_list(self):
         self.you_and_me = ["You", "I", "We", "They"]
         self.acquired = ["scored", "acquired", "reacquired", "forged", "created", "stole", "bought", "borrowed"]
-        self.a_or_number = ["a", random.randint(2,5)]
-    
+        self.a_or_number = ["a", random.randint(2,5)]    
         self.new_old = ["new", "worn", "old", "dirty", "dusty", "musty", "pristine", "priceless"]
         self.list1_metals = ["steel", "iron", "bronze", "copper", "silver", "gold", "platinum", "titanium", "tungsten", "uranium", "plutonium", "iridium", "osmium", "rhenium", "rhodium", "palladium", "ruthenium"]
         self.list2_enchantments = ["titanscored", "elemental", "magical", "enchanted", "legendary", "mythical", "ancient"]
-        self.list3_mix = [] #blank list to combine list with
+        self.list3_mix = []
         self.infusions = ['plated', 'scaled', 'alloy', 'armored', 'edged', 'infused', 'fused','encrusted','gilded','replica','toy']
         self.weapons = ["sword", "axe", "hammer", "mace", "spear", "dagger", "knife"]
 
@@ -29,7 +28,3 @@ class Random_Weapon_Generator():
             self.list3_mix.append(item)
 
 rng_weapon = Random_Weapon_Generator()
-
-            
-
-
